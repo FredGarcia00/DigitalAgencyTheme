@@ -138,6 +138,17 @@
             position: absolute;
             z-index: -1;
         }
+        .button1,
+        .button2 {
+            border: 1px solid #7E53FD;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            padding: 20px 50px;
+            cursor: pointer;
+        }
+        .button1 {
+            margin-right: 5px;
+        }
         .button {
             display: flex;
             align-items: center;
@@ -150,6 +161,7 @@
             color:#fff;
         }
 
+
         .circles__1 {
             transform: translateX(110px);
         }
@@ -160,25 +172,131 @@
             transform: translateY(-47px);
         }
 
+        .circles__4 {
+            transform: translate(88px, -48px);
+        }
+
+        .circles p {
+            letter-spacing: 5.2px;
+        }
+
+        .circles__5 {
+            transform: translate(254px, -69px);
+        }
+
         .circles__6 {
             transform: translateX(-60px);
         }
 
+        .circles__7 {
+            transform: translate(121px, 10px);
+        }
+
         .solution {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            margin: 50px 0;
+            height:550px;
         }
 
         .solution h2 {
             font-size:48px;
         }
 
+        .display ul {
+            margin-top: 40px;
+            max-width: 150px;
+            width: 100%;
+        }
 
         .display ul li {
-            cursor: pointer;
+            padding-bottom:10px;
+        }
+
+        .display ul li {
             list-style: none;
         }
+        .display ul li a{
+            text-decoration: none;
+            color:#000;
+            cursor: pointer;
+        }
+     
+        .display ul li a:hover{
+          background: grey;
+        }
+
+        .display {
+            display: flex;
+            transform: translateY(-281px);
+            position: absolute;
+            align-items: self-start;
+          
+        }
+
+        .display__area {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 947px;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+         
+        }
+
+        .display__area img {
+            height: 100%;
+        }
+        .display__description {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border-top:4px solid #38AF43;
+            padding: 0 10px;
+            
+        }
+        .display__description h4 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .display__description p {
+            line-height: 1.5;
+        }
+        
+
+        footer {
+            height: 480px;
+            background: #38394F;
+            z-index: -1;
+        }
+
+        
+        footer {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:#fff;
+        }
+        .display__bottom {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .display__btn {
+            margin-top: 20px;
+            padding: 20px 40px;
+            background: #7E53FD;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
         
 
         @media only screen and (max-width:1550px ) {
@@ -312,8 +430,8 @@
             <img class="team__vids" src="img/3.png" alt="">
     </section>
     <section class="button">
-        <button>View Theme</button>
-        <button>View App</button>
+        <div class="button1">View Theme</div>
+        <div class="button2">View App</div>
     </section>
     
 
@@ -332,20 +450,36 @@
     <section class="solution">
         <h2>Need a custom solution?</h2>
     </section>
-    <section class="display container">
-            <ul>
-                <li>01 install theme</li>
-                <li>02 landing page<li>
-                <li>03 build online store</li>
-                <li>04 custom theme</li>
-                <li>05 custom website</li>
-                <li>06 custom app</li>
-                <li>07 marketing assets</li>
-              
-            </ul>
-            <div class="display__area">
-                <img src="" alt="">
+    
+    <div class="display container">
+        <ul>
+            <li> <span class="">01</span> <a href="#">install theme</a> </li>
+            <li><span>02</span> <a href="#">landing page</a></li>
+            <li><span>03</span> <a href="#">build online store</a></li>
+            <li><span>04</span> <a href="#">custom store</a></li>
+            <li><span>05</span> <a href="#">custom website</a></li>
+            <li><span>06</span> <a href="#">custom app</a></li>
+            <li><span>07</span> <a href="#">marketing assets</a></li>
+        </ul>
+        <div class="display__area">
+            <div class="display__description">
+                <h4>Install Theme</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quisquam fuga consequatur.</p>
             </div>
-    </section>
+            <div class="display__1">
+                <img src="img/d1.png" alt=""> 
+            </div>
+            <div class="display__2">
+                <img src="img/d2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="display__bottom container">
+            <h2>We work with any budget!</h2>
+            <div class="display__btn">Let's get started</div>
+        </div>
+    </footer>
 </body>
 </html>
