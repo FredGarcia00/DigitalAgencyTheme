@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,400;1,700;1,800&display=swap');
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        body{
+            overflow-x:hidden;
+        }
+        img {
+            object-fit: contain;
+        }
+        .container {
+            margin:0 214px 0 378px;
+            max-width: 1930px;
+            overflow: hidden;
+            padding: 0 40px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width:1930px;
+            height: 63px;
+            background: #FFFFFF;
+            box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav__brand {
+            font-size:24px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+        nav ul {
+            display: flex;
+        }
+        ul li {
+            list-style:none;
+            margin-right: 5px;
+        }
+
+        .jumbo {
+            position:relative;
+            display:flex;
+            width: 1325.48px;
+            height: 700px;
+        }
+
+        .jumbo__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: translateY(-39px);
+        }
+
+        .jumbo__left h2 {
+            font-size:3rem;
+            letter-spacing: -3px;
+        }
+
+        .jumbo__left p{
+            font-size:22px;
+            margin: 25px 0;
+        }
+
+        .jumbo__left input {
+            max-width: 367px;
+            height: 51px;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            border: 0;
+        }
+
+        .jumbo__left ::placeholder {
+            align-items: center;
+        }
+
+        .jumbo__btn {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background: #7E53FD;
+            box-shadow: 0px 12px 42px 1px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            width: 173px;
+            height: 51px;
+            color: #FFFFFF;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .jumbo__right img {
+            position: absolute;
+        }
+
+        .jumbo__video {
+            transform: translate(-2px, 139px);
+            cursor: pointer;
+        }
+
+        .jumbo__shapes {
+            transform: translate(-124px, -62px);
+            z-index: -1;
+        }
+        .platform {
+            height: 330px;
+        }
+
+        .platform__sites {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height:200px;
+        }
+
+        .team {  
+           
+            padding: 0 40px;
+            margin-left: 378px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .team__back {  
+            position: absolute;
+            z-index: -1;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .team__back p {
+            transform: rotate(90deg);
+            color:#fff;
+        }
+
+        .circles__1 {
+            transform: translateX(110px);
+        }
+        .circles__2 {
+            transform: translateY(85px);
+        }
+        .circles__3 {
+            transform: translateY(-47px);
+        }
+
+        .circles__6 {
+            transform: translateX(-60px);
+        }
+
+        .solution {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solution h2 {
+            font-size:48px;
+        }
+
+
+        .display ul li {
+            cursor: pointer;
+            list-style: none;
+        }
+        
+
+        @media only screen and (max-width:1550px ) {
+            nav {
+                max-width: 1400px;
+            }
+            .nav__brand{
+                transform: translateX(-142px);
+            }
+            .container {
+                margin:0 214px 0 103px;
+            }
+
+            .jumbo__shapes {
+                width:700px;
+                transform: translate(-123px,-48px);
+            }
+            .jumbo__video {
+                width:412px;
+                transform: translate(34px,103px);
+            }
+        }
+
+        .circles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        @media only screen and (max-width: 867px) {
+            nav {
+                max-width: 900px;
+                width: 100%;
+                margin: 0;
+            }
+            .container {
+                margin:0;
+
+            }
+            .jumbo {
+                flex-direction: column;
+                align-items: center;
+                max-width: 900px;
+                width: 100%;
+                max-width: 500px;
+
+            }
+
+            .jumbo h2 {
+                font-size:2rem;
+            }
+            .jumbo__left {
+                transform:translate(0);
+            }
+            .jumbo__right {
+                position: relative;
+                display: flex;
+                align-items: center;
+            }
+
+            .jumbo__right img {
+                position: relative;
+                object-fit: contain;
+                transform: translate(0);
+                
+            }
+
+            .jumbo__shapes {
+                width: 250px;
+            }
+            .jumbo__video {
+                width: 168px;
+                transform: translate(-208px,10px) !important;
+            }
+
+            .platform__sites {
+                flex-direction: column;
+            }
+
+        }
+        @media only screen and (max-width: 387px) {
+            .jumbo {
+                height: 100%;
+            }
+
+        }
+    </style>
+    <nav>
+        <div class="nav__brand">87lux</div>
+        <div>
+            <ul class="nav__links">
+                <li>Themes</li>
+                <li>Apps</li>
+                <li>assets</li>
+                <li>about us</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="jumbo container">
+        <div class="jumbo__left">
+            <h2>We Give Your Business an Edge<br>Over Your Competitors!</h2>
+            <p>Everything you need for your business: Themes, Apps, Assets<br> and More..</p>
+                <input type="text" placeholder="Enter your email address">
+            <div class="jumbo__btn">Get Started</div>
+
+        </div>
+        <div class="jumbo__right">
+            <img class="jumbo__shapes" src="img/BG Shapes.png" alt="">
+            <img class="jumbo__video" src="img/Video Player.png" alt="">
+        </div>
+    </section>
+
+    <section class="platform container">
+        <p>platforms</p>
+        <div class="platform__sites">
+            <img src="img/shopify.png" alt="">
+            <img src="img/wp.png" alt="">
+            <img src="img/bic.png" alt="">
+            <img src="img/wix.png" alt="">
+        </div>
+    </section>
+
+    <section class="team">
+            <div class="team__back">
+                <img  src="img/back.png" alt="">
+                <p>latest projects</p>
+            </div>
+            <img class="team__dashboard" src="img/1.png" alt="">
+            <img class="team__building" src="img/2.png" alt="">
+            <img class="team__vids" src="img/3.png" alt="">
+    </section>
+    <section class="button">
+        <button>View Theme</button>
+        <button>View App</button>
+    </section>
+    
+
+    <section class="circles container">
+        <img class="circles__1" src="img/circles/e1.png" alt="">
+        <img class="circles__2" src="img/circles/e2.png" alt="">
+        <img class="circles__3" src="img/circles/e3.png" alt="">
+        <img class="circles__6" src="img/circles/e6.png" alt="">
+        <p style="font-size:48px;">Meet the team</p>
+        <img class="circles__4" src="img/circles/e4.png" alt="">
+        <img class="circles__7" src="img/circles/e7.png" alt="">
+        <img class="circles__5" src="img/circles/e5.png" alt="">
+      
+    </section>
+
+    <section class="solution">
+        <h2>Need a custom solution?</h2>
+    </section>
+    <section class="display container">
+            <ul>
+                <li>01 install theme</li>
+                <li>02 landing page<li>
+                <li>03 build online store</li>
+                <li>04 custom theme</li>
+                <li>05 custom website</li>
+                <li>06 custom app</li>
+                <li>07 marketing assets</li>
+              
+            </ul>
+            <div class="display__area">
+                <img src="" alt="">
+            </div>
+    </section>
+</body>
+</html>
